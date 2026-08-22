@@ -24,11 +24,25 @@ Este GitHub funciona como um **portfólio técnico demonstrativo**. Os cases rep
 
 ---
 
+## Projeto em destaque
+
+### Automação de Ruptura & Estoque
+
+Case reproduzível de Supply Chain Analytics que transforma uma base de vendas e estoque em **cobertura, criticidade, valor de estoque e priorização automática**.
+
+- [Visão completa do case](./portfolio/automacao-ruptura/README.md)
+- [Código Apps Script](./portfolio/automacao-ruptura/src/ruptura_demo.gs)
+- [Dataset sintético](./portfolio/automacao-ruptura/data/sample_estoque.csv)
+
+**Diferencial:** o projeto pode ser reproduzido em Google Sheets sem utilizar qualquer dado real de empresa ou de terceiros.
+
+---
+
 ## Projetos principais
 
 | Projeto | O que resolve | Entrega |
 |---|---|---|
-| [**Ruptura & Estoque**](./portfolio/automacao-ruptura/README.md) | Identificação rápida de produtos críticos | Cálculo de cobertura, ranking, relatório HTML e alertas |
+| [**Ruptura & Estoque**](./portfolio/automacao-ruptura/README.md) | Identificação rápida de produtos críticos | Cálculo de cobertura, ranking, relatório e automação |
 | [**Controle de Validade**](./portfolio/controle-validade/README.md) | Priorização de itens próximos do vencimento | Criticidade, valor em risco, ranking e alerta preventivo |
 | [**Controle de Caixas & Movimentações**](./portfolio/controle-caixas/README.md) | Visibilidade de saldo e inatividade | KPIs, status, valor associado e automação de ação |
 | [**Portal de Automações & Operações**](./portfolio/portal-automacoes/README.md) | Centralização de projetos e rotinas | Portal único com dashboards, automações e governança |
@@ -85,8 +99,8 @@ Minha abordagem busca conectar **operação + tecnologia + resultado**, e não a
 - [x] Posicionamento profissional do perfil
 - [x] Cases de ruptura, validade, controle de ativos e portal
 - [x] Capas visuais demonstrativas
-- [ ] Adicionar código reproduzível aos principais cases
-- [ ] Adicionar datasets sintéticos completos
+- [x] Código reproduzível + dataset sintético no case de Ruptura & Estoque
+- [ ] Expandir código reproduzível para os demais cases
 - [ ] Publicar GIFs/screenshots das interfaces
 - [ ] Criar demonstração web navegável do portal
 
