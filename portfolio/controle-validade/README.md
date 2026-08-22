@@ -1,46 +1,76 @@
-# Controle de Validade e Risco de Perda
+# Controle de Validade & Risco de Perda
 
-Case demonstrativo para monitoramento de produtos com vencimento próximo e priorização de ações preventivas.
+![Capa do case](./assets/cover.svg)
 
-## Problema
+> **CASE DE PORTFÓLIO — DADOS 100% FICTÍCIOS**
 
-Bases extensas dificultam a identificação rápida dos produtos que exigem ação imediata, aumentando o risco de perda financeira e operacional.
+Projeto demonstrativo para transformar uma base de validade em uma rotina diária de **priorização de risco, acompanhamento financeiro e alertas preventivos**.
+
+## Problema de negócio
+
+Bases extensas dificultam a identificação rápida dos itens que exigem ação. Sem priorização clara, aumenta o risco de vencimento, perda financeira e retrabalho operacional.
 
 ## Objetivo
 
-Automatizar a classificação dos itens por criticidade e gerar uma visão consolidada para acompanhamento diário.
+Automatizar a leitura da base e entregar uma visão consolidada com:
 
-## Indicadores
+- total de itens monitorados;
+- itens vencidos;
+- itens críticos;
+- itens em alerta;
+- dias para vencimento;
+- valor unitário;
+- valor potencial em risco;
+- ranking por unidade;
+- alertas automáticos.
 
-- Total de itens monitorados
-- Itens vencidos
-- Itens críticos
-- Itens em alerta
-- Valor unitário
-- Valor potencial em risco
-- Unidade mais crítica
+## Lógica demonstrativa
 
-## Fluxo proposto
+```text
+Data de validade
+      ↓
+Dias para vencimento
+      ↓
+Classificação de criticidade
+      ↓
+Valor potencial em risco
+      ↓
+Ranking e ação prioritária
+```
 
-`Base de validade` → `Tratamento` → `Cálculo de dias para vencimento` → `Classificação de risco` → `Dashboard/Relatório` → `Alerta automático`
+## Arquitetura
 
-## Tecnologias
+```mermaid
+flowchart LR
+    A[Base de validade] --> B[Tratamento]
+    B --> C[Dias para vencimento]
+    C --> D[Classificação de risco]
+    D --> E[KPIs]
+    E --> F[Dashboard / HTML]
+    E --> G[Alerta automático]
+```
 
-- Google Apps Script
-- Google Sheets
-- Power BI
-- SQL
-- HTML/CSS
+## Stack
 
-## Exemplo de classificação
+`Google Apps Script` `Google Sheets` `Power BI` `SQL` `HTML/CSS`
 
-- Vencido: prioridade máxima
-- Crítico: vencimento muito próximo
-- Alerta: requer acompanhamento
-- OK: dentro da faixa operacional
+## O que este case demonstra
 
-## Resultado esperado
+- automação de uma rotina preventiva;
+- criação de regra de criticidade;
+- conexão entre risco operacional e impacto financeiro;
+- ranking para priorização;
+- comunicação automática para tomada de decisão.
 
-Priorizar ações preventivas, reduzir análises manuais e apoiar decisões sobre itens com maior risco de perda.
+## Resultado demonstrado
 
-> Case de portfólio construído com dados fictícios e regras demonstrativas.
+A solução reduz o esforço de leitura manual da base e direciona a atenção para os itens de maior urgência e maior impacto potencial.
+
+## Privacidade
+
+As datas, valores, produtos e unidades utilizados publicamente são fictícios. Nenhum dado corporativo ou informação de terceiros é exposto.
+
+---
+
+**Autor:** Michel Lucena  
+**Tipo:** Gestão de Risco Operacional / Automação
