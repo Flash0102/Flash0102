@@ -1,0 +1,13 @@
+sku,produto,categoria,responsavel,unidade,venda_30d,estoque,custo_unitario
+1001,Cafe Tradicional 500g,Mercearia,Comprador A,CD Norte,180,8,14.90
+1002,Leite Integral 1L,Mercearia,Comprador A,CD Norte,300,15,4.80
+1003,Biscoito Chocolate 120g,Biscoitos,Comprador B,CD Norte,120,35,3.90
+1004,Refrigerante Cola 2L,Bebidas,Comprador C,CD Sul,240,5,8.50
+1005,Agua Mineral 500ml,Bebidas,Comprador C,CD Sul,450,120,1.70
+1006,Chocolate ao Leite 90g,Bomboniere,Comprador B,CD Sul,90,2,5.60
+1007,Salgadinho Queijo 80g,Snacks,Comprador B,CD Centro,150,40,4.20
+1008,Suco Uva 1L,Bebidas,Comprador C,CD Centro,75,4,7.90
+1009,Macarrao Espaguete 500g,Mercearia,Comprador A,CD Centro,60,30,4.50
+1010,Iogurte Natural 170g,Refrigerados,Comprador D,CD Norte,210,10,2.90
+1011,Pao de Queijo 400g,Congelados,Comprador D,CD Sul,45,25,11.90
+1012,Energetico 269ml,Bebidas,Comprador C,CD Centro,330,12,6.80
