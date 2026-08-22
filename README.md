@@ -1,65 +1,107 @@
+<div align="center">
+
 # Michel Lucena
+### Dados • Automação • Supply Chain • Planejamento
 
-**Analista de Planejamento e Projetos | Supply Chain | Dados & Automação**
+**Transformando rotinas operacionais em indicadores, automações e soluções para decisão.**
 
-Profissional focado em transformar rotinas operacionais em processos mais eficientes por meio de análise de dados, dashboards, automação e melhoria contínua.
+![Power BI](https://img.shields.io/badge/Power%20BI-Analytics-F2C811?style=for-the-badge&logo=powerbi&logoColor=000)
+![SQL](https://img.shields.io/badge/SQL-Data-4479A1?style=for-the-badge&logo=mysql&logoColor=fff)
+![Python](https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=fff)
+![Apps Script](https://img.shields.io/badge/Apps%20Script-Automation-4285F4?style=for-the-badge&logo=googleappsscript&logoColor=fff)
+![Power Automate](https://img.shields.io/badge/Power%20Automate-Workflows-0066FF?style=for-the-badge&logo=powerautomate&logoColor=fff)
 
-## Sobre mim
-
-- Atuação em Planejamento, Projetos, Supply Chain e automação de processos.
-- Formação em Banco de Dados.
-- MBA em Planejamento e Projetos em andamento.
-- Interesse em evolução para posições cada vez mais orientadas a Dados e Analytics.
-
-## Stack técnica
-
-**Dados & BI**  
-SQL • Power BI • Excel • Google Sheets • Power Query • Databricks • AWS Athena
-
-**Automação & Desenvolvimento**  
-Google Apps Script • Python • Power Automate • n8n • HTML/CSS/JavaScript
-
-**Competências**  
-KPIs • Dashboards Executivos • ETL/ELT • Automação de Rotinas • Análise de Estoque • Supply Chain Analytics • Gestão de Mix • Melhoria de Processos
-
-## Projetos em destaque
-
-### 1. Dashboard Executivo de Supply Chain
-Painel fictício para acompanhamento de mix, estoque, cobertura, vendas, produtos novos e indicadores operacionais.
-
-[Ver case](./portfolio/dashboard-supply-chain/README.md)
-
-### 2. Automação de Ruptura e Estoque
-Case de automação com regras de negócio, consolidação de indicadores e geração automática de relatórios.
-
-[Ver case](./portfolio/automacao-ruptura/README.md)
-
-### 3. Controle de Validade e Risco de Perda
-Projeto demonstrativo para priorização de itens críticos, vencimentos e valor potencial em risco.
-
-[Ver case](./portfolio/controle-validade/README.md)
-
-### 4. Estudo de Mercado e Sortimento
-Case analítico para comparação de produtos, avaliação de oportunidades e suporte à decisão de sortimento.
-
-[Ver case](./portfolio/estudo-mercado/README.md)
-
-## Como organizo meus projetos
-
-Cada case deste portfólio procura apresentar:
-
-1. Problema de negócio
-2. Objetivo
-3. Regras e indicadores
-4. Arquitetura da solução
-5. Tecnologias utilizadas
-6. Resultado esperado
-7. Próximos passos
-
-> Todos os projetos públicos deste perfil utilizam dados fictícios, anonimizados ou demonstrativos. Nenhuma informação confidencial de empresas é publicada.
+</div>
 
 ---
 
-### Atualmente estudando e evoluindo em
+## Perfil profissional
 
-`SQL` `Power BI` `Python` `Databricks` `Automação` `Engenharia de Dados` `Analytics`
+Atuo na interseção entre **Planejamento, Supply Chain, Dados e Automação de Processos**. Meu foco é mapear problemas operacionais, estruturar regras de negócio e transformar dados em **KPIs, dashboards, alertas e fluxos automatizados**.
+
+Este GitHub é um **portfólio técnico demonstrativo**. Os cases representam problemas e soluções que fazem parte da minha experiência prática, sempre publicados com **dados fictícios, anonimizados e sem informações confidenciais de terceiros**.
+
+---
+
+## Projetos em destaque
+
+| Projeto | Desafio de negócio | Entrega | Tecnologias |
+|---|---|---|---|
+| [**Dashboard Executivo de Supply Chain**](./portfolio/dashboard-supply-chain/README.md) | Consolidar visão de estoque, cobertura, mix e desempenho | Painel executivo com KPIs e visão gerencial | Power BI • SQL • Excel |
+| [**Automação de Ruptura e Estoque**](./portfolio/automacao-ruptura/README.md) | Identificar rapidamente produtos críticos | Regras de cobertura, rankings, alertas e relatório automatizado | Apps Script • Sheets • HTML |
+| [**Controle de Validade e Risco**](./portfolio/controle-validade/README.md) | Priorizar produtos próximos do vencimento | Classificação de risco, valor exposto e alertas automáticos | Apps Script • Sheets • Automação |
+| [**Estudo de Mercado e Sortimento**](./portfolio/estudo-mercado/README.md) | Apoiar decisões de mix e portfólio | Análise comparativa de produtos e oportunidades | SQL • Power BI • Analytics |
+
+---
+
+## Minha abordagem
+
+```mermaid
+flowchart LR
+    A[Problema Operacional] --> B[Regra de Negócio]
+    B --> C[Dados e Tratamento]
+    C --> D[KPIs]
+    D --> E[Automação]
+    E --> F[Dashboard / Interface]
+    F --> G[Decisão]
+```
+
+### O que procuro demonstrar em cada case
+
+- entendimento do problema de negócio;
+- definição de regras e indicadores;
+- organização e tratamento de dados;
+- automação de tarefas repetitivas;
+- construção de dashboards e interfaces;
+- documentação clara da solução;
+- visão de impacto operacional.
+
+---
+
+## Stack
+
+**Dados & BI**  
+`SQL` `Power BI` `Excel` `Google Sheets` `Power Query` `Databricks` `AWS Athena`
+
+**Automação & Desenvolvimento**  
+`Google Apps Script` `Python` `Power Automate` `n8n` `HTML` `CSS` `JavaScript`
+
+**Negócio & Analytics**  
+`Supply Chain Analytics` `Gestão de Mix` `Estoque` `Cobertura` `Ruptura` `KPIs` `Melhoria de Processos`
+
+---
+
+## Estrutura dos cases
+
+Cada projeto do portfólio segue uma estrutura próxima à utilizada em projetos reais:
+
+1. Contexto
+2. Problema
+3. Objetivo
+4. Regras de negócio
+5. Arquitetura da solução
+6. KPIs
+7. Tecnologias
+8. Demonstração com dados fictícios
+9. Resultado esperado
+10. Próximas evoluções
+
+---
+
+## Roadmap
+
+- [x] Estruturar posicionamento profissional do perfil
+- [x] Criar catálogo inicial de cases
+- [ ] Adicionar screenshots e GIFs das interfaces
+- [ ] Publicar código demonstrativo dos projetos
+- [ ] Criar datasets fictícios para reprodução dos cases
+- [ ] Adicionar diagramas de arquitetura e fluxos de automação
+- [ ] Publicar um portal demonstrativo dos projetos
+
+---
+
+<div align="center">
+
+### Operação + Dados + Automação = decisões melhores e processos mais eficientes
+
+</div>
