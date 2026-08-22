@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Supply Chain - Demo</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;background:#f4f7f6;color:#17332d}.wrap{max-width:1100px;margin:auto;padding:28px}.top{background:#123f35;color:#fff;padding:28px;border-radius:18px}.badge{display:inline-block;background:#dff3e9;color:#123f35;padding:7px 10px;border-radius:999px;font-weight:700;font-size:12px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.card,.panel{background:#fff;border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}.kpi{font-size:28px;font-weight:800;margin-top:8px}.muted{color:#667a74;font-size:13px}.bar{height:12px;background:#e8eeec;border-radius:8px;overflow:hidden;margin:8px 0 14px}.bar span{display:block;height:100%;background:#2d7a64}.bar.warn span{background:#c78b2a}.bar.crit span{background:#b74a4a}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:11px;text-align:left;border-bottom:1px solid #edf1ef}th{background:#eef5f2}.status{font-weight:700}.ok{color:#23724d}.att{color:#a36a12}.rup{color:#a93232}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.grid{grid-template-columns:1fr}.wrap{padding:14px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="top">
+      <span class="badge">PORTFÓLIO • DADOS 100% FICTÍCIOS</span>
+      <h1>Dashboard Executivo de Supply Chain</h1>
+      <p>Protótipo demonstrativo para monitoramento de estoque, cobertura e risco operacional.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card"><div class="muted">Total de SKUs</div><div class="kpi">10</div></div>
+      <div class="card"><div class="muted">Itens em ruptura</div><div class="kpi">3</div></div>
+      <div class="card"><div class="muted">Produtos novos</div><div class="kpi">3</div></div>
+      <div class="card"><div class="muted">Valor em estoque</div><div class="kpi">R$ 5,8 mil</div></div>
+    </section>
+
+    <section class="panel">
+      <h2>Risco por CD</h2>
+      <div class="muted">CD Alpha</div><div class="bar warn"><span style="width:48%"></span></div>
+      <div class="muted">CD Beta</div><div class="bar"><span style="width:26%"></span></div>
+      <div class="muted">CD Gama</div><div class="bar crit"><span style="width:67%"></span></div>
+    </section>
+
+    <section class="panel" style="margin-top:18px">
+      <h2>Itens prioritários</h2>
+      <table>
+        <thead><tr><th>SKU</th><th>Produto</th><th>CD</th><th>Cobertura</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>SKU003</td><td>Produto Gama</td><td>CD Alpha</td><td>1,0 dia</td><td class="status rup">RUPTURA</td></tr>
+          <tr><td>SKU005</td><td>Produto Epsilon</td><td>CD Beta</td><td>2,0 dias</td><td class="status att">ATENÇÃO</td></tr>
+          <tr><td>SKU007</td><td>Produto Eta</td><td>CD Gama</td><td>1,0 dia</td><td class="status rup">RUPTURA</td></tr>
+          <tr><td>SKU009</td><td>Produto Iota</td><td>CD Gama</td><td>5,0 dias</td><td class="status att">ATENÇÃO</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
