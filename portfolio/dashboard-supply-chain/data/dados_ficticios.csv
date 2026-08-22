@@ -1,0 +1,11 @@
+sku,produto,categoria,cd,estoque,venda_30d,custo_unitario,dias_desde_cadastro
+SKU001,Produto Alpha,Bebidas,CD Alpha,120,300,4.50,180
+SKU002,Produto Beta,Mercearia,CD Alpha,25,210,8.90,95
+SKU003,Produto Gama,Snacks,CD Alpha,8,240,3.20,40
+SKU004,Produto Delta,Higiene,CD Beta,180,150,6.75,220
+SKU005,Produto Epsilon,Bebidas,CD Beta,12,180,5.10,25
+SKU006,Produto Zeta,Mercearia,CD Beta,70,90,11.40,310
+SKU007,Produto Eta,Snacks,CD Gama,5,150,2.80,15
+SKU008,Produto Teta,Higiene,CD Gama,210,120,7.30,400
+SKU009,Produto Iota,Bebidas,CD Gama,45,270,4.95,65
+SKU010,Produto Kappa,Mercearia,CD Alpha,95,60,9.80,150
