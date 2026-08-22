@@ -18,7 +18,7 @@ Criar uma rotina automatizada capaz de:
 - calcular venda média diária e cobertura;
 - classificar criticidade;
 - gerar rankings por unidade e responsável;
-- montar relatório HTML executivo;
+- montar relatório executivo;
 - disparar alertas automaticamente;
 - manter histórico para análise.
 
@@ -33,6 +33,38 @@ Criar uma rotina automatizada capaz de:
 | OK | Cobertura >= 7 dias |
 | Valor de estoque | Estoque × custo unitário fictício |
 
+## Demo reproduzível
+
+Este case agora contém uma versão executável com dados sintéticos:
+
+- [`data/sample_estoque.csv`](./data/sample_estoque.csv) — base fictícia com produtos, estoque, venda e custo;
+- [`src/ruptura_demo.gs`](./src/ruptura_demo.gs) — rotina em Google Apps Script que calcula KPIs e cria uma aba de resultado;
+- nenhuma informação corporativa ou dado de terceiros é utilizado.
+
+### Como executar
+
+1. Crie uma planilha no Google Sheets.
+2. Crie uma aba chamada `BASE_DEMO`.
+3. Importe ou cole o conteúdo de `data/sample_estoque.csv` nessa aba.
+4. Abra **Extensões > Apps Script**.
+5. Cole o conteúdo de `src/ruptura_demo.gs`.
+6. Execute a função `executarMonitoramentoRupturaDemo()`.
+7. O script cria/atualiza a aba `RESULTADO_DEMO` com os indicadores calculados.
+
+### Saída gerada
+
+A rotina retorna, por SKU:
+
+- venda dos últimos 30 dias;
+- venda média diária;
+- estoque disponível;
+- cobertura em dias;
+- custo unitário fictício;
+- valor de estoque;
+- status `RUPTURA`, `ATENCAO` ou `OK`.
+
+Também gera um resumo com total de SKUs, itens em ruptura, itens em atenção, itens OK, percentual de ruptura e valor total de estoque.
+
 ## Arquitetura
 
 ```mermaid
@@ -41,9 +73,22 @@ flowchart LR
     B --> C[Validação dos dados]
     C --> D[Cálculo de KPIs]
     D --> E[Classificação]
-    E --> F[Relatório HTML]
-    F --> G[E-mail / Alerta]
+    E --> F[Resultado Operacional]
+    F --> G[Relatório / Alerta]
     D --> H[Histórico]
+```
+
+## Estrutura do case
+
+```text
+automacao-ruptura/
+├── README.md
+├── assets/
+│   └── cover.svg
+├── data/
+│   └── sample_estoque.csv
+└── src/
+    └── ruptura_demo.gs
 ```
 
 ## Stack
@@ -57,7 +102,8 @@ flowchart LR
 - criação de KPIs acionáveis;
 - construção de comunicação executiva;
 - automação de rotina recorrente;
-- preocupação com rastreabilidade e histórico.
+- preocupação com rastreabilidade e histórico;
+- capacidade de transformar uma necessidade operacional em solução reproduzível.
 
 ## Resultado demonstrado
 
