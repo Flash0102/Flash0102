@@ -1,5 +1,7 @@
 ![Michel Lucena — Data Analytics, Automação e Supply Chain](./assets/profile-banner.svg)
 
+<img align="right" width="180" src="./assets/profile-photo-original.svg" alt="Foto de Michel Lucena" />
+
 <div align="center">
 
 ### Data Analytics • Automação • Supply Chain • Data Products
